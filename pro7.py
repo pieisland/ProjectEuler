@@ -1,5 +1,7 @@
 #coding:utf-8
 
+import math
+
 """
 2019.03.12.Tue.
 <1001번쨰 소수>
@@ -9,7 +11,7 @@
 """
 def findPrime(n):
 
-    for i in range(2, n):
+    for i in range(2, int(math.sqrt(n)+1)):
         if n%i==0:
             #print("It is not prime number")
             return 0
