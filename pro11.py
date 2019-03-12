@@ -14,9 +14,10 @@
 저렇게 안 풀 수 있을까?
 
 이번 문제는 배열의 인덱스에 대해 연습할 수 있는 문제였다.
-1학년 2학기 때가 새록새록 더오른다..
+1학년 2학기 때가 새록새록 떠오른다..
 """
 
+#수형 곱
 def horMult(a):
     max=0
     for i in range(0, len(a)):
@@ -27,6 +28,7 @@ def horMult(a):
             if n>max: max=n
     return max
 
+#수직 곱
 def verMult(a):
     max=0
     for i in range(0, len(a[0])):
@@ -37,6 +39,7 @@ def verMult(a):
             if n>max: max=n
     return max
 
+#오른쪽 아래 대각선 곱
 def diaMult1(a):
     max=0
     for i in range(0, len(a)-3):
@@ -47,6 +50,7 @@ def diaMult1(a):
             if n>max: max=n
     return max
 
+#왼쪽 아래 대각선 곱
 def diaMult2(a):
     max=0
     for i in range(0, len(a)-3):
